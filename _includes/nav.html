@@ -1,0 +1,22 @@
+<div id="nav" class="list">
+{% if page.topnav == "home" %}
+<li id="home" class="current"><a href="{{ site.data.url.home[page.lang] }}">{{ site.data.t.home[page.lang] }}</a></li>
+{% else %}
+<li id="home" class=""><a href="{{ site.data.url.home[page.lang] }}">{{ site.data.t.home[page.lang] }}</a></li>
+{% endif %}
+{% if page.topnav == "aboutme" %}
+<li id="aboutMe" class="current"><a href="{{ site.data.url.aboutme[page.lang] }}">{{ site.data.t.aboutme[page.lang] }}</a></li>
+{% else %}
+<li id="aboutMe" class=""><a href="{{ site.data.url.aboutme[page.lang] }}">{{ site.data.t.aboutme[page.lang] }}</a></li>
+{% endif %}
+{% if page.topnav == "mywork" %}
+<li id="myWork" class="current"><a href="{{ site.data.url.mywork[page.lang] }}">{{ site.data.t.mywork[page.lang] }}</a></li>
+{% else %}
+<li id="myWork" class=""><a href="{{ site.data.url.mywork[page.lang] }}">{{ site.data.t.mywork[page.lang] }}</a></li>
+{% endif %}
+{% if page.topnav == "contact" %}
+<li id="contact" class="current"><a href="{{ site.data.url.contact[page.lang] }}">{{ site.data.t.contact[page.lang] }}</a></li>
+{% else %}
+<li id="contact" class=""><a href="{{ site.data.url.contact[page.lang] }}">{{ site.data.t.contact[page.lang] }}</a></li>
+{% endif %}
+</div>

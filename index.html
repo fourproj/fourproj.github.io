@@ -1,0 +1,45 @@
+---
+layout: default
+lang: lv
+active: home
+topnav: home
+subnav:
+---
+<div id="homeContentWrap">
+<div id="leftColAndLatestArticleWrap">
+<div id="leftColWrap">
+<div id="myPhotoWrap">
+    <div id="myPhotoImg">
+        <span>my photo</span>
+    </div>
+    <div id="myPhotoText">
+        <span> *** *** Šī ir mana interneta vietne</span>
+    </div>
+</div>
+
+<div id="bookAdWrap">
+    <div id="bookAdProduct">
+        <span>book photo</span>
+    </div>
+    <div id="bookAdText">
+        <span>Grāmatas nosaukums</span>
+        <br>
+        <a href="#">cena $ **</a>
+    </div>
+</div>
+</div>
+<div id="latestArticle">
+    {% for post in site.posts | limit  1 | limit "lang", "{{page.lang}}"%}
+    <a href="{{post.url}}"><h2>{{post.title}}</h2></a>
+    <span>{{post.date}}</span>
+    {{ post.content | remove: post.title | truncatewords:500}}
+    {% endfor %}
+</div>
+</div>
+{% for post in site.posts | offset: 1 | limit: 3 | limit "lang", "{{page.lang}}" %}
+<div class="olderPost">
+     <a href="{{post.url}}"><h2>{{post.title}}</h2></a>
+    {{ post.content | remove: post.title | truncatewords:100}}
+</div>
+{% endfor %}
+</div>

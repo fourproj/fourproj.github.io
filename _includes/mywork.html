@@ -1,0 +1,24 @@
+<div id="myWorkNav" class="list">
+{% if page.subnav == "books" %}
+<li class="subcurrent"><a href="{{ site.data.url.books[page.lang] }}">
+{{ site.data.t.books[page.lang] }}</a></li>
+{% else %}
+<li class=""><a href="{{ site.data.url.books[page.lang] }}">
+{{ site.data.t.books[page.lang] }}</a></li>
+{% endif %}
+{% if page.subnav == "movies" %}
+<li class="subcurrent"><a href="{{ site.data.url.movies[page.lang] }}">
+{{ site.data.t.movies[page.lang] }}</a></li>
+{% else %}
+<li class=""><a href="{{ site.data.url.movies[page.lang] }}">
+{{ site.data.t.movies[page.lang] }}</a></li>
+{% endif %}
+{% if page.subnav == "all" %}
+<li class="subcurrent"><a href="{{ site.data.url.all[page.lang] }}">
+{{ site.data.t.all[page.lang] }}</a></li>
+{% else %}
+<li class=""><a href="{{ site.data.url.all[page.lang] }}">
+{{ site.data.t.all[page.lang] }}</a></li>
+{% endif %}
+</div>
+

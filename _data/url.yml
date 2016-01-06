@@ -1,0 +1,32 @@
+---
+  home:
+    lv: /
+    en: /en/
+  aboutme:
+    lv: /par-mani/
+    en: /en/about-me/
+  biography:
+    lv: /par-mani/biografija/
+    en: /en/about-me/biography/
+  media:
+    lv: /par-mani/mediji/
+    en: /en/about-me/media/
+  mywork:
+    lv: /dailrade/
+    en: /en/my-work/
+  books:
+    lv: /dailrade/gramatas/
+    en: /en/my-work/books/
+  movies:
+    lv: /dailrade/filmas/
+    en: /en/my-work/movies/
+  all:
+    lv: /dailrade/
+    en: /en/my-work/
+  contact:
+    lv: /kontakti/
+    en: /en/contact/
+  copyrights:
+    lv: ""
+    en: ""
+---

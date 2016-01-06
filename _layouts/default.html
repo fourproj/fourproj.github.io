@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+{% include head.html %}
+<body>
+<div id="screenWrap">
+<div id="siteWrap">
+<div id="headerWrap">  
+{% include header.html %}
+</div>  
+<div id="contentWrap">
+{% if page.topnav == "aboutme" %}
+<div id="aboutMeWrap">
+{% include aboutme.html %}
+</div>
+{% elsif page.topnav == "mywork" %}
+<div id="myWorkWrap">
+{% include mywork.html %}
+</div>
+{% else %}
+{% endif %}
+{{ content }}
+</div>
+<div id="footerWrap">
+{% include footer.html %}
+</div>
+</div>
+</div>  
+</body>
+</html>

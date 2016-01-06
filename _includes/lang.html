@@ -1,0 +1,13 @@
+<div id="lang" class="list">
+{% assign active = page.active %}
+{% if page.lang == "lv"%}
+<li id="langLV" class="currentlang"><a href="{{site.data.url[page.active]="lv"}}">latviski</a></li>
+{% else %}
+<li id="langLV"><a href="{{site.data.url[page.active]="lv"}}">latviski</a></li>
+{% endif %}
+{% if page.lang == "en" %}
+<li id="langEN" class="currentlang"><a href="{{site.data.url[page.active]="en"}}">english</a></li>
+{% else %}
+<li id="langEN"><a href="{{site.data.url[page.active]="en"}}">english</a></li>
+{% endif %}
+</div>

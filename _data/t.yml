@@ -1,0 +1,32 @@
+---
+  home:
+    lv: "sākums"
+    en: "home"
+  aboutme:
+    lv: "par mani"
+    en: "about me"
+  biography:
+    lv: "biogrāfija"
+    en: "biography"
+  media:
+    lv: "mediji"
+    en: "media"
+  mywork:
+    lv: "daiļrade"
+    en: "my work"
+  books:
+    lv: "grāmatas"
+    en: "books"
+  movies:
+    lv: "filmas"
+    en: "movies"
+  all:
+    lv: "viss"
+    en: "all"
+  contact:
+    lv: "kontakti"
+    en: "contact"
+  copyrights:
+    lv: "kājenes teksts"
+    en: "footer text"
+---

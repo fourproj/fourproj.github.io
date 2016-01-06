@@ -1,0 +1,17 @@
+<div id="aboutMeNav" class="list">
+{% if page.subnav == "biography" %}
+<li class="subcurrent"><a href="{{ site.data.url.biography[page.lang] }}">
+{{ site.data.t.biography[page.lang] }}</a></li>
+{% else %}
+<li class=""><a href="{{ site.data.url.biography[page.lang] }}">
+{{ site.data.t.biography[page.lang] }}</a></li>
+{% endif %}
+{% if page.subnav == "media" %}
+<li class="subcurrent"><a href="{{ site.data.url.media[page.lang] }}">
+{{ site.data.t.media[page.lang] }}</a></li>
+{% else %}
+<li class=""><a href="{{ site.data.url.media[page.lang] }}">
+{{ site.data.t.media[page.lang] }}</a></li>
+{% endif %}
+</div>
+
