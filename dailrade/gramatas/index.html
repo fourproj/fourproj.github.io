@@ -4,5 +4,24 @@ lang: lv
 active: books
 topnav: mywork
 subnav: books
+title: Manas grāmatas
 ---
-
+<h2>{{page.title}}</h2>
+<div id="myWorkContentWrap">
+    {% assign sortedwork = (site.myworks | sort: "weight" | where: "lang", "lv" ) %}
+{% for mywork in sortedwork %}
+{% if mywork.subnav == "books" %}
+    <div class="myWorkContent">
+        <a href="{{mywork.url}}">
+        <div class="myWorkPic">
+            <span>Vāks</span>
+        </div>
+        </a>
+        <div class="myWorkText">
+            <a a href="{{mywork.url}}"><h3>{{ mywork.title }}</h3></a>
+            <p>{{mywork.releasedate }} <a href="#">Cena $**</a> {{ mywork.content | remove: mywork.title | truncatewords:200}}</p>
+        </div>
+    </div>
+    {% endif %}    
+{% endfor %}
+</div>

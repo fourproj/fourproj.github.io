@@ -4,5 +4,21 @@ lang: lv
 active: contact
 topnav: contact
 subnav:
+title: Kontakti
 ---
-
+<h2>{{ page.title }}</h2>
+<form>
+    <input type="text" name="name" placeholder="vārds uzvārds">
+    <br>
+    <br>
+    <input type="text" name="email" placeholder="e-pasts">
+    <br>
+    <br>
+    <input type="text" name="subject" placeholder="temats">
+    <br>
+    <br>
+    <textarea name="text" placeholder="vēstules teksts" rows="10" cols="30"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="nosūtīt">
+</form>

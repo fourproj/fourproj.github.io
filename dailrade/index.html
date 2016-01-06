@@ -8,10 +8,8 @@ title: Mani darbi
 ---
 <h2>{{page.title}}</h2>
 <div id="myWorkContentWrap">
-    {% assign sortedwork = (site.myworks | sort: "weight" | limit: "lang", "lv" ) %}
+    {% assign sortedwork = (site.myworks | sort: "weight" | where: "lang", "lv" ) %}
 {% for mywork in sortedwork %}
-{% if mywork.lang == "lv" %}
-
     <div class="myWorkContent">
         <a href="{{mywork.url}}">
         <div class="myWorkPic">
@@ -23,6 +21,5 @@ title: Mani darbi
             <p>{{mywork.releasedate }} <a href="#">Cena $**</a> {{ mywork.content | remove: mywork.title | truncatewords:200}}</p>
         </div>
     </div>
-    {% endif %}    
 {% endfor %}
 </div>
