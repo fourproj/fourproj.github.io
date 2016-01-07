@@ -18,7 +18,7 @@ title: Mani darbi
         </a>
         <div class="myWorkText">
             <a a href="{{mywork.url}}"><h3>{{ mywork.title }}</h3></a>
-            <p>{{mywork.releasedate }} <a href="#">Cena $**</a> {{ mywork.content | remove: mywork.title | truncatewords:200}}</p>
+            <p>{{mywork.releasedate }} <a href="#">Cena $**</a><br><br>{{ mywork.excerpt | remove: mywork.title | truncatewords:200}}</p>
         </div>
     </div>
 {% endfor %}

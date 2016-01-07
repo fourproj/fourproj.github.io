@@ -1,3 +1,7 @@
+body {
+  text-align: justify;
+  text-justify: inter-word; }
+
 ul {
   padding: 0; }
 
@@ -336,6 +340,32 @@ a {
   width: 39em;
   overflow: hidden;
   text-overflow: clip; }
+
+#contentMyWorkAdWrap {
+  box-sizing: border-box;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  float: left;
+  width: 14em;
+  height: 22em;
+  border: solid 1px black; }
+
+#myWorkAdPic {
+  width: 14em;
+  height: 18em;
+  border-bottom: solid 1px black; }
+
+.movieTrailerWrap {
+  margin-right: auto;
+  margin-left: auto;
+  width: 40em;
+  height: 24.5em;
+  border: solid 1px black; }
+
+.movieTrailerVideo {
+  width: 40em;
+  height: 22.5em;
+  border-bottom: solid 1px black; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
