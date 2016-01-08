@@ -4,5 +4,24 @@ lang: en
 active: books
 topnav: mywork
 subnav: books
+title: My books
 ---
-
+<h2>{{page.title}}</h2>
+<div id="myWorkContentWrap">
+    {% assign sortedwork = (site.myworks | sort: "weight" | where: "lang", "en" ) %}
+{% for mywork in sortedwork %}
+{% if mywork.subnav == "books" %}
+    <div class="myWorkContent">
+        <a href="{{mywork.url}}">
+        <div class="myWorkPic">
+            <span>Cover</span>
+        </div>
+        </a>
+        <div class="myWorkText">
+            <a a href="{{mywork.url}}"><h3>{{ mywork.title }}</h3></a>
+            <p>{{mywork.releasedate }} <a href="#">Price $**</a><br><br>{{ mywork.excerpt | remove: mywork.title | truncatewords:200}}</p>
+        </div>
+    </div>
+    {% endif %}    
+{% endfor %}
+</div>

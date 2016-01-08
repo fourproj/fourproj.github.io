@@ -30,12 +30,12 @@
     lv: ""
     en: ""
   bookone:
-    lv: /gramatas/books/gramata-viens/
+    lv: /dailrade/gramatas/gramata-viens/
     en: /en/my-work/books/book-one/
   booktwo:
-    lv: /gramatas/books/gramata-divi/
+    lv: /dailrade/gramatas/gramata-divi/
     en: /en/my-work/books/book-two/
   movieone:
-    lv: /filmas/movies/filma-viens/
+    lv: /dailrade/filmas/filma-viens/
     en: /en/my-work/movies/movie-one/
 ---

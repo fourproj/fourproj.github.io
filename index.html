@@ -30,14 +30,15 @@ title: Mana vietne
 </div>
 </div>
 <div id="latestArticle">
-    {% for post in site.posts | limit  1 | limit "lang", "{{page.lang}}"%}
+    {% assign sortedposts = (site.posts | where: "lang", "lv" ) %}
+    {% for post in sortedposts | limit : 1 %}
     <a href="{{post.url}}"><h2>{{post.title}}</h2></a>
     <span>{{post.date}}</span>
     {{ post.content | remove: post.title | truncatewords:500}}
     {% endfor %}
 </div>
 </div>
-{% for post in site.posts | offset: 1 | limit: 3 | limit "lang", "{{page.lang}}" %}
+{% for post in sortedposts | offset: 1 | limit: 3 %}
 <div class="olderPost">
      <a href="{{post.url}}"><h2>{{post.title}}</h2></a>
     {{ post.content | remove: post.title | truncatewords:100}}

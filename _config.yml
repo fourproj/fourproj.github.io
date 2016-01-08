@@ -17,10 +17,8 @@ permalink: none
 # Build settings
 markdown: kramdown
 collections:
-  books:
-    output: true
-  movies:
-    output: true
   myworks:
     output: true
+    permalink: /mywork/
+
 
